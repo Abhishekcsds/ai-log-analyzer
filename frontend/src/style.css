@@ -1,0 +1,179 @@
+/* 🌌 GLOBAL DARK THEME */
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+/* 🧱 Container */
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🔥 HEADER */
+.header-card {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: white;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.header-card h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header-card p {
+  color: #94a3b8;
+}
+
+/* 📦 CARDS */
+.upload, .viewer, .insights {
+  background: #111827;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* 📝 TEXTAREA */
+textarea {
+  width: 100%;
+  height: 180px;
+  background: #020617;
+  color: #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #334155;
+}
+
+textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.3);
+}
+
+/* 🔘 BUTTONS */
+button, .file-upload {
+  width: 160px;
+  height: 44px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+}
+
+button:disabled {
+  background: #475569;
+}
+
+/* 📄 File name */
+.file-name {
+  text-align: center;
+  color: #94a3b8;
+}
+
+/* 🔵 Headings */
+h2 {
+  color: #e5e7eb;
+  border-bottom: 1px solid #334155;
+}
+
+/* 📊 JSON + LOG */
+.json-box, .log-box {
+  background: #020617;
+  padding: 16px;
+  border-radius: 10px;
+  font-family: monospace;
+  color: #e5e7eb;
+}
+
+/* 🔢 LINE */
+.log-line {
+  display: flex;
+  gap: 10px;
+  padding: 4px;
+}
+
+/* 🔢 LINE NUMBER */
+.line-number {
+  color: #64748b;
+}
+
+/* 🎯 RISK COLORS (IMPROVED) */
+.log-line.low {
+  background: rgba(34,197,94,0.08);
+  border-left: 3px solid #22c55e;
+}
+
+.log-line.medium {
+  background: rgba(245,158,11,0.08);
+  border-left: 3px solid #f59e0b;
+}
+
+.log-line.high {
+  background: rgba(249,115,22,0.08);
+  border-left: 3px solid #f97316;
+}
+
+.log-line.critical {
+  background: rgba(239,68,68,0.08);
+  border-left: 3px solid #ef4444;
+}
+
+/* 🔥 DROP ZONE */
+.drop-zone {
+  border: 2px dashed #475569;
+  border-radius: 14px;
+  padding: 30px;
+  margin-top: 15px;
+  background: #020617;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.drop-zone:hover {
+  border-color: #6366f1;
+  background: rgba(99,102,241,0.08);
+}
+
+.drop-zone.active {
+  border-color: #6366f1;
+  background: rgba(99,102,241,0.15);
+}
+
+/* 🔘 ACTIONS */
+.drop-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* ⏳ SPINNER */
+.spinner {
+  border: 3px solid #334155;
+  border-top: 3px solid #6366f1;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f1f5f9;
+}
+
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #111;
+}
+
+/* Cards */
+.upload, .viewer, .insights {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* JSON */
+.json-box {
+  background: #0f172a;
+  color: #22d3ee;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  overflow-x: auto;
+}
+
+/* Log */
+.log-box {
+  background: #f8fafc;
+  padding: 10px;
+}
+
+.log-line {
+  display: flex;
+  gap: 10px;
+}
+
+.line-number {
+  color: #888;
+}

@@ -1,0 +1,31 @@
+{
+    "name": "ai-secure-platform",
+    "version": "1.0.0",
+    "description": "AI Secure Data Intelligence Platform - Log Analyzer + Risk Engine",
+    "main": "backend/app.js",
+    "type": "module",
+    "scripts": {
+        "start": "node backend/app.js",
+        "dev": "nodemon backend/app.js"
+    },
+    "keywords": [
+        "AI",
+        "log analyzer",
+        "security",
+        "node",
+        "express"
+    ],
+    "author": "Abhishek Yadav",
+    "license": "ISC",
+    "dependencies": {
+        "@google/generative-ai": "^0.24.1",
+        "cors": "^2.8.6",
+        "dotenv": "^17.3.1",
+        "express": "^5.2.1",
+        "multer": "^2.1.1",
+        "openai": "^6.32.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.14"
+    }
+}
