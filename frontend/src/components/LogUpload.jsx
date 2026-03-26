@@ -45,7 +45,7 @@ const LogUpload = ({ setResult }) => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/analyze", {
+      const res = await axios.post("https://ai-log-analyzer-jw3y.onrender.com/api/analyze", {
         content: log,
         input_type: "log",
         options: {
