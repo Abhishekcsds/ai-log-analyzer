@@ -41,6 +41,8 @@ body {
   margin-top: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   border: 1px solid rgba(255,255,255,0.05);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 /* 📝 TEXTAREA */
@@ -93,28 +95,43 @@ h2 {
   border-bottom: 1px solid #334155;
 }
 
-/* 📊 JSON + LOG */
+/* 📊 JSON + LOG (🔥 FIXED WRAPPING) */
 .json-box, .log-box {
   background: #020617;
   padding: 16px;
   border-radius: 10px;
   font-family: monospace;
   color: #e5e7eb;
+
+  white-space: pre-wrap;        /* wrap text */
+  word-break: break-word;       /* break long words */
+  overflow-wrap: anywhere;      /* prevent overflow */
+  overflow-x: auto;             /* scroll if needed */
+  max-width: 100%;
 }
 
 /* 🔢 LINE */
 .log-line {
   display: flex;
   gap: 10px;
-  padding: 4px;
+  padding: 6px;
+  align-items: flex-start;
+  flex-wrap: wrap;              /* 🔥 IMPORTANT FIX */
+  border-radius: 6px;
 }
 
 /* 🔢 LINE NUMBER */
 .line-number {
   color: #64748b;
+  min-width: 20px;
 }
 
-/* 🎯 RISK COLORS (IMPROVED) */
+/* 📝 TEXT WRAP INSIDE LINE */
+.log-line span {
+  word-break: break-word;
+}
+
+/* 🎯 RISK COLORS */
 .log-line.low {
   background: rgba(34,197,94,0.08);
   border-left: 3px solid #22c55e;
